@@ -143,10 +143,10 @@ search.addEventListener('keyup', () => {
    
    if (match.length >= 1) {
       addPagination(match);
-      header.innerText = 'STUDENTS';
+      header.textContent = 'STUDENTS';
    } else {
       const linkList = document.querySelector('.link-list');
       linkList.innerHTML = '';
-      header.innerText = 'No results found';
+      header.textContent = 'No results found';
    }
 });
